@@ -3,7 +3,7 @@ JMP = 'jmp'
 NOP = 'nop'
 
 def main():
-    f = open('input.txt', 'r')
+    f = open('input2.txt', 'r')
     instructions = f.read().split('\n')[:-1]
     op_arg_pairs = structure_instructions(instructions)
     print(run_instructions(op_arg_pairs))
