@@ -9,6 +9,8 @@ def find_solution():
         sum_so_far = numbers[i]
         numbers_so_far = [numbers[i]]
         for j in range(i + 1, len(numbers)):
+            if sum_so_far > invalid_number:
+                break
             if sum_so_far == invalid_number:
                 return numbers_so_far
             sum_so_far += numbers[j]
