@@ -1,6 +1,6 @@
 def main():
     f = open('input.txt', 'r')
-    rules = f.read().split('\n')[:-2]
+    rules = f.read().split('\n')[:-1]
     rulebook = make_rulebook(rules)
     traveler = RulebookTraveler(rulebook)
     print(traveler.count_bags('shiny gold'))
